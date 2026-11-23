@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yunus Emre Aktaş</title>
+<meta name="description" content="Yunus Emre Aktaş. Eskiden kod yazardı, şimdi yapay zekayla bir şeyler üretiyor.">
+<meta name="theme-color" content="#0f0f11">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230f0f11'/><text x='16' y='22' font-family='monospace' font-size='16' fill='%23e8e6e1' text-anchor='middle'>ya</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0f0f11;
+  --text:#e8e6e1;
+  --muted:#8a8883;
+  --line:#232327;
+  --link:#e8e6e1;
+  --sans:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{
+  background:var(--bg);
+  color:var(--text);
+  font:16px/1.65 var(--sans);
+  -webkit-font-smoothing:antialiased;
+}
+main{max-width:620px;margin:0 auto;padding:72px 20px 56px}
+a{color:var(--link);text-decoration:underline;text-decoration-color:#4a4a50;text-underline-offset:3px;transition:text-decoration-color .15s}
+a:hover{text-decoration-color:var(--text)}
+a:focus-visible{outline:1px solid var(--muted);outline-offset:3px;border-radius:2px}
+
+h1{font-size:1.75rem;font-weight:600;letter-spacing:-.02em;line-height:1.2}
+.links{margin-top:14px;display:flex;flex-wrap:wrap;gap:6px 20px;font:14px var(--mono)}
+.links a{color:var(--muted);text-decoration:none}
+.links a:hover{color:var(--text)}
+
+section{margin-top:56px;padding-top:24px;border-top:1px solid var(--line)}
+h2{font:400 13px var(--mono);color:var(--muted);margin-bottom:18px}
+h2::before{content:"// "}
+p+p{margin-top:14px}
+
+ul{list-style:none}
+.projects li{padding:14px 0;border-bottom:1px solid var(--line)}
+.projects li:first-child{padding-top:0}
+.projects li:last-child{border-bottom:0;padding-bottom:0}
+.row{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.projects a{font-weight:500}
+.tag{font:12px var(--mono);color:var(--muted);white-space:nowrap}
+.projects p{color:var(--muted);font-size:15px;margin-top:4px}
+
+.history li{display:flex;justify-content:space-between;gap:12px;padding:6px 0}
+.history span{color:var(--muted);font-size:15px;text-align:right}
+
+footer{margin-top:72px;font:12px var(--mono);color:#5a5955}
+
+@media (max-width:480px){
+  main{padding:48px 16px 40px}
+  h1{font-size:1.5rem}
+  section{margin-top:44px}
+  .history li{flex-direction:column;gap:0}
+  .history span{text-align:left}
+}
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Yunus Emre Aktaş</h1>
+    <nav class="links" aria-label="Bağlantılar">
+      <a href="https://github.com/yeaktas" target="_blank" rel="me noopener">github</a>
+      <a href="https://www.linkedin.com/in/yeaktas" target="_blank" rel="me noopener">linkedin</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>hakkımda</h2>
+    <p>Bilgisayar programcılığı okudum, 42'de projeler yaptım. Askerliğimi elektronik harp astsubayı olarak yaptım. Şimdi yapay zekayla projeler üretiyorum.</p>
+  </section>
+
+  <section>
+    <h2>projeler</h2>
+    <ul class="projects">
+      <li>
+        <div class="row"><a href="https://github.com/yeaktas/minishell">minishell</a><span class="tag">C</span></div>
+        <p>Bash'in küçük bir kopyası. Adı minik, kendisi pek değil.</p>
+      </li>
+      <li>
+        <div class="row"><a href="https://github.com/yeaktas/cub3d">cub3d</a><span class="tag">C</span></div>
+        <p>Wolfenstein 3D'den ilham alan, raycasting ile çalışan minik bir 3D motor.</p>
+      </li>
+      <li>
+        <div class="row"><a href="https://github.com/yeaktas/Inception">Inception</a><span class="tag">Docker</span></div>
+        <p>Docker ile kurulmuş, birbirine bağlı servislerden oluşan küçük bir altyapı.</p>
+      </li>
+      <li>
+        <div class="row"><a href="https://github.com/yeaktas/IRC">ft_irc</a><span class="tag">C++</span></div>
+        <p>Sıfırdan yazılmış bir IRC sunucusu. Soketler, kanallar, bolca sohbet.</p>
+      </li>
+      <li>
+        <div class="row"><a href="https://github.com/alpardayalman/Transcendence">ft_transcendence</a><span class="tag">JavaScript</span></div>
+        <p>Ekip olarak yaptığımız, gerçek zamanlı online Pong oynanan web uygulaması.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>geçmiş</h2>
+    <ul class="history">
+      <li>Ecole 42 Kocaeli <span>Yazılım</span></li>
+      <li>Giresun Üniversitesi <span>Bilgisayar Programcılığı</span></li>
+      <li>125. Yıl Anadolu Teknik Lisesi <span>Veritabanı Programcılığı</span></li>
+    </ul>
+  </section>
+
+  <footer>yeaktas.com</footer>
+</main>
+</body>
+</html>
